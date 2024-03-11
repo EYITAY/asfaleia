@@ -77,10 +77,10 @@ body {
 /* Container */
 #simplemodal-container {height:460px; width:600px; color:#bbb; background-color:#333; border:4px solid #444; padding:12px;}
 #simplemodal-container .simplemodal-data {padding:8px;}
-#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #9F2B68; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
 #simplemodal-container a {color:#ddd;}
 #simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
-#simplemodal-container h3 {color:#84b8d9;}
+#simplemodal-container h3 {color:#FF0090;}
 #simplemodal-container a.modalCloseImg {
   background:url(x.png) no-repeat; /* adjust url as required */
   width:25px;
@@ -129,19 +129,15 @@ function about() {
   <div id="attackdiv"></div>
   <div id="aboutdiv"><i class="fa fa-question-circle fa-2x" onClick="about();"></i></div>
 
-  <div id="ccdiv">
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-  </div>
+  
 
   <div id="about">
-  <h3>About Cyberplanet Attack</h3>
-  Attack maps are the <span style="font-family: monospace;">&lt;blink&gt;</span> tag of information security. They are pure eye candy, meant to scare the general public and <i>WOW</i> unsuspecting executives visiting Security Operations Centers. Yet, security vendors keep cranking them out. We didn't want organizations without "real" data or l33t animation skills to to feel left out, so we built this map for anyone to use [CC BY-SA]. Plus, they're all missing sound effects! And, most (all, really) use mind-numbingly dumb map projections, begging the question: <i>"Does Greenland make my map look big?"</i>.<br/>
+  <h3>About Cyberplanet Attack Map </h3>
+  Explore the global threat landscape with a bird's-eye view of cyber activities. <span style="font-family: monospace;">&lt;blink&gt;</span> <i>WOW</i> Identify trends, patterns, and hotspots to anticipate and thwart potential threats before they impact your organization <i></i>.<br/>
   <br/>
-  The default map uses a statistical model (infrequently updated) for source "attack" node country of origin &amp; frequency while destinations are fully randomized. The default sound is a Star Wars "blaster" (guess which one!). Sounds can be customized and an organization name can be specified, plus there are a few other <i>interesting</i> options.<br/>
-  <br/>
-  Check out the <a target=_blank href='http://github.com/hrbrmstr/pewpew'>github repository</a> for more information and instructions on how to customize the map options for maximum effect.<br/>
-  <br/>
-  Brought to you by <a target=_blank href="http://twitter.com/alexcpsec">@alexcpsec</a>, <a target=_blank href="http://twitter.com/hrbrmstr">@hrbrmstr</a> &amp; <a target=_blank href="https://datadrivensecurity.info/blog/pages/resources.html">Data Driven Security</a>
+  The default map uses a statistical model (infrequently updated) for source "attack" node country of origin &amp; frequency while destinations are fully randomized.  <i>interesting</i> this can be customized to your organizational needs.<br/>
+
+  Brought to you by <a target=_blank href="https://cyberplanet.llc/">Cyber planet</a> 2023 </a> &amp; <a target=_blank href="https://datadrivensecurity.info/blog/pages/resources.html">Data Driven Security</a>
   </div>
 
   <!-- Use Hash-Bang to maintain scroll position when closing modal -->
@@ -159,7 +155,10 @@ function about() {
     attack_type = [ "any port scan in a storm", "ssh brutish force", "Thought Leader Tweet",
                     "SYN FLOOD BA-BY", "Spotty", "Heartbleed Hotel", "Po_ODLE", "Sharknado",
                     "CORGI Attack", "Ping of DOOM", "Conficker", "Goldfinger", "SANDPAPER",
-                    "SNAILshock", "Spaghetti RAT", "Driduplex" ] ;
+                    "SNAILshock", "Spaghetti RAT", "Driduplex", 
+                    "Annonymous Sudan CHAT GPT DDOS attack",
+                    "LockBit3.O Georgia County ransomeware attack", 
+                    "Noname Gang Russia Attack on French Govenment Website" ] ;
 
     // gotta add types here if you add more sounds (or delete them)
 
@@ -516,7 +515,7 @@ function about() {
                $('#attackdiv').append(srccountry + " (" + randomIP() + ") " +
                    " <span style='color:red'>attacks</span> " +
                    attackdiv_slatlong + " (" + randomIP() + ") " +
-                   " <span style='color:steelblue'>(" + which_attack + ")</span> " +
+                   " <span style='color:lavender'>(" + which_attack + ")</span> " +
                    "<br/>");
                $('#attackdiv').animate({scrollTop: $('#attackdiv').prop("scrollHeight")}, 500);
            }
