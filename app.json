@@ -1,15 +1,15 @@
 {
-  "name": "IPew Attack Map",
+  "name": "Cyber Planet Attack Map",
   "description": "Now you can have your very own IP attack map",
   "keywords": [
     "security",
     "map",
-    "pew"
+    "asfaleia"
   ],
-  "repository": "https://github.com/hrbrmstr/pewpew.git",
+  "repository": "https://github.com/eyitay/asfaleia.git",
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-php"
+      "url": "https://cyberplanet.llc"
     }
   ]
 }
