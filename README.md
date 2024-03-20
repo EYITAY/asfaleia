@@ -1,6 +1,5 @@
 ### Cyberplanet  Attack Map
 
-![img](pewpew.png)
 
 Explore the global threat landscape with a bird's-eye view of cyber activities. Identify trends, patterns, and hotspots to anticipate and thwart potential threats before they impact your organization 
   
